@@ -1,7 +1,7 @@
 # import sqlite3
 # import random
 #
-# Исходные данные
+# # Исходные данные
 # cities = ["Москва", "Санкт-Петербург", "Казань"]
 # months = [
 #     "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
@@ -10,7 +10,7 @@
 # # Подключение к БД
 # conn = sqlite3.connect("sales.db")
 # cursor = conn.cursor()
-# Создание таблицы
+# # Создание таблицы
 # cursor.execute("""
 # CREATE TABLE IF NOT EXISTS sales (
 #     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -19,7 +19,7 @@
 #     amount REAL NOT NULL
 # )
 # """)
-# Генерация данных
+# # Генерация данных
 # for city in cities:
 #     for month in months:
 #         amount = round(random.uniform(1, 50), 2)
@@ -28,7 +28,7 @@
 #             (city, month, amount)
 #         )
 # conn.commit()
-# Закрытие соединения
+# # Закрытие соединения
 # conn.close()
 # print("База данных успешно создана и наполнена")
 
